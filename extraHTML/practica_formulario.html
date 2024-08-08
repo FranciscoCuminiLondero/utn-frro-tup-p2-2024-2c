@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica Formulario</title>
+</head>
+
+<body>
+    <h1>Práctica Formulario</h1>
+    <form action="" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" maxlength="30" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email" placeholder="correo@empresa.com" required><br>
+        <label for="asunto">Asunto:</label><br>
+        <select name="asunto" id="asunto" size="3">
+            <option value="pedir_presupuesto">Pedir presupuesto web</option>
+            <option value="solicitar_cita">Solicitar cita previa</option>
+            <option value="otros">Otros</option>
+        </select><br>
+        <label>¿Cómo nos ha conocido?</label><br>
+        <input type="checkbox" name="conocimiento[]" id="amigo" value="amigo">
+        <label for="amigo">Un amigo</label>
+        <input type="checkbox" name="conocimiento[]" id="google" value="google">
+        <label for="google">Googleando</label>
+        <input type="checkbox" name="conocimiento[]" id="buzoneo" value="buzoneo">
+        <label for="buzoneo">Buzoneo</label>
+        <input type="checkbox" name="conocimiento[]" id="otros" value="otros">
+        <label for="otros">Otros</label><br>
+        <label for="mensaje">Escribe un mensaje: </label><br>
+        <textarea name="mensaje" id="mensaje" cols="30" rows="10" maxlength="300"></textarea><br>
+        <input type="checkbox" name="terminos_condiciones" id="terminos_condiciones" value="aceptado" required>
+        <label for="terminos_condiciones">He leído y acepto el <a href="#">aviso legal y la
+                política de
+                privacidad</a></label><br><br>
+        <button type="submit">Enviar</button>
+
+    </form>
+</body>
+
+</html>
