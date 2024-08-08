@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 3</title>
+</head>
+
+<body>
+    <!-- Ejercicio 1 -->
+    <h3>Formulario 1</h3>
+    <form action="" method="post">
+        <label for="name">Nombre:</label>
+        <input type="text" name="name" id="name" placeholder="Ingrese su nombre" required><br>
+        <label for="age">Edad</label>
+        <input type="number" name="age" id="age" placeholder="Ingrese su edad" required><br>
+        <button type="submit">Enviar</button>
+    </form>
+    <!-- Ejercicio 1 -->
+
+    <!-- Ejercicio 2 -->
+    <h3>Formulario 2</h3>
+    <form action="" method="post">
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" name="email" id="email" placeholder="Ingrese su correo electrónico" required><br>
+        <label for="pass1">Contraseña</label>
+        <input type="password" name="pass1" id="pass1" placeholder="Ingrese su contraseña" required><br>
+        <label for="pass2">Repita su contraseña</label>
+        <input type="password" name="pass2" id="pass2" placeholder="Ingrese nuevamente su contraseña" required><br>
+        <button type="submit">Enviar</button>
+    </form>
+    <!-- Ejercicio 2 -->
+
+    <!-- Ejercicio 3 -->
+    <h3>Formulario 3</h3>
+    <form action="" method="post">
+        <label for="name2">Nombre:</label>
+        <input type="text" name="name2" id="name2" placeholder="Ingrese su nombre" required><br>
+        <label for="email2">Correo Electrónico:</label>
+        <input type="email" name="email2" id="email2" placeholder="Ingrese su correo electrónico" required><br>
+        <label for="dni">DNI:</label>
+        <input type="number" name="dni" id="dni" placeholder="Ingrese su DNI" required><br>
+        <label for="curriculum">Curriculum Vitae</label><br>
+        <textarea name="curriculum" id="curriculum" cols="30" rows="10"></textarea><br>
+        <button type="submit">Enviar</button>
+    </form>
+    <!-- Ejercicio 3 -->
+
+    <!-- Ejercicio 4 -->
+    <h3>Formulario 4</h3>
+    <form action="" method="post">
+        <label for="email3">Correo Electrónico:</label>
+        <input type="email" id="email3" name="email3" placeholder="Ingrese su correo electrónico" required><br>
+        <label for="pass3">Contraseña:</label>
+        <input type="password" name="pass3" id="pass3" placeholder="Ingrese su Contraseña" required><br>
+        <h4>Pelicula/s:</h4>
+        <input type="checkbox" id="movie_1" name="movie[]" value="Shrek">
+        <label for="movie_1">Shrek</label><br>
+        <input type="checkbox" id="movie_2" name="movie[]" value="Harry Potter">
+        <label for="movie_2">Harry Potter</label><br>
+        <input type="checkbox" id="movie_3" name="movie[]" value="Toy Story">
+        <label for="movie_3">Toy Story</label><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+    <!-- Ejercicio 4 -->
+
+    <!-- Ejercicio 5 -->
+    <h3>Formulario 5</h3>
+    <form action="" method="post">
+        <input type="radio" id="windows" name="fav_os" value="windows">
+        <label for="windows">Windows</label><br>
+        <input type="radio" id="linux" name="fav_os" value="linux">
+        <label for="linux">Linux</label><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+    <!-- Ejercicio 5 -->
+
+    <!-- Ejercicio 6 -->
+    <h3>Formulario 6</h3>
+    <form action="" method="post">
+        <label for="emails">Selecciona uno o varios correos electrónicos (mantener presionado shift para seleccionar
+            más de una opción):</label><br><br>
+        <select id="emails" name="emails[]" multiple>
+            <option value="correo1@ejemplo.com">correo1@ejemplo.com</option>
+            <option value="correo2@ejemplo.com">correo2@ejemplo.com</option>
+            <option value="correo3@ejemplo.com">correo3@ejemplo.com</option>
+            <option value="correo4@ejemplo.com">correo4@ejemplo.com</option>
+            <option value="correo5@ejemplo.com">correo5@ejemplo.com</option>
+        </select>
+        <br><br>
+        <button type="submit">Enviar</button>
+    </form>
+    <!-- Ejercicio 6 -->
+
+    <!-- Ejercicio 7 -->
+    <h3>Formulario 7</h3>
+    <form action="" method="post">
+        <label for="paises">Selecione un país</label><br>
+        <select name="paises" id="paises">
+            <optgroup label="Europa">
+                <option value="italia">Italia</option>
+                <option value="francia">Francia</option>
+            </optgroup>
+            <optgroup label="América">
+                <option value="argentina">Argentina</option>
+                <option value="brasil">Brasil</option>
+            </optgroup>
+        </select><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+    <!-- Ejercicio 7 -->
+
+    <!-- Ejercicio 8 -->
+    <h3>Formulario 8</h3>
+    <form action="" method="post">
+        <label for="name3">Nombre</label><br>
+        <input type="text" name="name3" id="name3" required><br><br>
+        <label for="paises">Votar sitio</label><br>
+        <input type="radio" name="calificacion" id="excelente" value="excelente">
+        <label for="excelente">Excelente</label><br>
+        <input type="radio" name="calificacion" id="muy_bueno" value="muy_bueno">
+        <label for="muy_bueno">Muy bueno</label><br>
+        <input type="radio" name="calificacion" id="bueno" value="bueno">
+        <label for="bueno">Bueno</label><br>
+        <input type="radio" name="calificacion" id="regular" value="regular">
+        <label for="regular">Regular</label><br>
+        <input type="radio" name="calificacion" id="malo" value="malo">
+        <label for="malo">Malo</label><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+    <!-- Ejercicio 8 -->
+</body>
+
+</html>
