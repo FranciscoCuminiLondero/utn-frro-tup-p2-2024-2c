@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica Tablas</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        tr {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Práctica Tabla:</h1>
+    <h3>Ejercicio 1</h3>
+    <table>
+        <tr>
+            <th>Ciudad</th>
+            <th>Aeropuerto</th>
+            <th>Playa</th>
+            <th>Habitantes</th>
+        </tr>
+        <tr>
+            <td>Reus</td>
+            <td>Si</td>
+            <td>No</td>
+            <td>100000</td>
+        </tr>
+        <tr>
+            <td>Tarragona</td>
+            <td>No</td>
+            <td>Si</td>
+            <td>13000</td>
+        </tr>
+        <tr>
+            <td>Madrid</td>
+            <td>Si</td>
+            <td>No</td>
+            <td>3100000</td>
+        </tr>
+        <tr>
+            <td>Barcelona</td>
+            <td>Si</td>
+            <td>Si</td>
+            <td>1600000</td>
+        </tr>
+    </table>
+    <h3>Ejercicio 2</h3>
+    <table>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td rowspan="2">E,I</td>
+            <td>F</td>
+            <td colspan="2">G,H</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td rowspan="2">K,O</td>
+            <td>L</td>
+        </tr>
+        <tr>
+            <td>M</td>
+            <td>N</td>
+            <td>P</td>
+        </tr>
+    </table>
+</body>
+
+</html>
