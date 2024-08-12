@@ -27,7 +27,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: #007700;
+  background-color: #004977;
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 10px;
@@ -57,11 +57,11 @@ nav {
 }
 
 .nav-item:hover a {
-  color: #007700;
+  color: #004977;
 }
 
 .nav-item-login {
-  background-color: #0f470f;
+  background-color: #002840;
   font-weight: 700;
   border-radius: 10%;
 }
