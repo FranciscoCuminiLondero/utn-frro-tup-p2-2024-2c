@@ -1,6 +1,6 @@
 // EJERCICIO 1
 // alert("Hello World!");
-prompt("Pedir dato");
+
 // EJERCICIO 2
 document.write("Hello World!");
 
