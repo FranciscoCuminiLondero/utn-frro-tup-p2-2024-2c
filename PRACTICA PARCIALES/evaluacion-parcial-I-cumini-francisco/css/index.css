@@ -1,0 +1,106 @@
+* {
+  font-family: Verdana, sans-serif;
+  color: rgb(71, 71, 71);
+  font-size: 16px;
+}
+
+.cabecera {
+  background-color: rgb(60, 66, 95);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+}
+
+.profile-picture {
+  /* Redondear la imagen y darle un tamaño maximo de 200px */
+  align-content: center;
+  max-height: 200px;
+  border-radius: 100%;
+}
+
+.presentacion {
+  background-color: white;
+  margin: 2%;
+  color: rgb(92, 92, 92);
+  padding: 2%;
+  border-radius: 2em;
+}
+
+.nav-bar {
+  display: flex;
+}
+
+.datos-personales {
+  background: #d1d0d0;
+  padding: 1%;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.contenido {
+  padding: 2em;
+  width: 100%;
+}
+
+.date {
+  color: gray;
+  font-size: small;
+}
+
+.contenido h3 {
+  background-color: rgb(183, 176, 189);
+  padding: 2px;
+}
+
+.my-button {
+  padding: 10px 20px;
+  background-color: rgb(60, 66, 95);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.datos-personales-grid {
+  display: grid;
+  align-items: center;
+  background-color: #fff;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 0.5em;
+}
+
+.datos-personales-grid .datos {
+  padding: 1.5em;
+  border-radius: 2em;
+}
+
+.datos-personales-grid .datos:nth-child(1) {
+  background-color: darkcyan;
+  grid-column: span 5;
+}
+
+.datos-personales-grid .datos:nth-child(1) h3 {
+  color: #fff;
+  margin: 0;
+}
+
+.datos-personales-grid .datos:nth-child(2) {
+  background-color: azure;
+  grid-column: span 1;
+  grid-row: span 6;
+  height: 95%;
+}
+
+.datos-personales-grid .datos:nth-child(3),
+.datos-personales-grid .datos:nth-child(4),
+.datos-personales-grid .datos:nth-child(5),
+.datos-personales-grid .datos:nth-child(6),
+.datos-personales-grid .datos:nth-child(7) {
+  background-color: #e2e2e2;
+  grid-column-start: 2;
+  grid-column-end: 6;
+}
