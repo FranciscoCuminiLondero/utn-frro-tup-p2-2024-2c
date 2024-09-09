@@ -1,22 +1,23 @@
 * {
-  font-family: Verdana, sans-serif;
+  font-family: Verdana;
   color: rgb(71, 71, 71);
-  font-size: 16px;
+  font-size: small;
 }
 
 .cabecera {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgb(60, 66, 95);
   color: white;
-  display: flex;
-  align-items: center;
-  padding: 1em;
+  padding: 1em 2em;
 }
 
 .profile-picture {
   /* Redondear la imagen y darle un tamaño maximo de 200px */
   align-content: center;
-  max-height: 200px;
   border-radius: 100%;
+  max-height: 200px;
 }
 
 .presentacion {
@@ -42,7 +43,6 @@
 
 .contenido {
   padding: 2em;
-  width: 100%;
 }
 
 .date {
@@ -50,7 +50,7 @@
   font-size: small;
 }
 
-.contenido h3 {
+h3 {
   background-color: rgb(183, 176, 189);
   padding: 2px;
 }
@@ -64,43 +64,44 @@
   cursor: pointer;
 }
 
-.datos-personales-grid {
+.my-button:hover {
+  background-color: rgba(60, 66, 95, 0.774);
+}
+
+.grid {
   display: grid;
-  align-items: center;
-  background-color: #fff;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(6, 1fr);
   grid-gap: 0.5em;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto, repeat(5, 1fr);
+  background-color: #fff;
 }
 
-.datos-personales-grid .datos {
-  padding: 1.5em;
+.datos {
   border-radius: 2em;
+  padding: 1em;
 }
 
-.datos-personales-grid .datos:nth-child(1) {
+.datos:nth-child(1) {
+  display: flex;
+  align-items: center;
+  grid-column: span 12;
   background-color: darkcyan;
-  grid-column: span 5;
-}
-
-.datos-personales-grid .datos:nth-child(1) h3 {
   color: #fff;
-  margin: 0;
 }
 
-.datos-personales-grid .datos:nth-child(2) {
+.datos:nth-child(2) {
   background-color: azure;
-  grid-column: span 1;
-  grid-row: span 6;
-  height: 95%;
+  grid-column: span 4;
+  grid-row-start: 2;
+  grid-row-end: 7;
 }
 
-.datos-personales-grid .datos:nth-child(3),
-.datos-personales-grid .datos:nth-child(4),
-.datos-personales-grid .datos:nth-child(5),
-.datos-personales-grid .datos:nth-child(6),
-.datos-personales-grid .datos:nth-child(7) {
-  background-color: #e2e2e2;
-  grid-column-start: 2;
-  grid-column-end: 6;
+.datos:nth-child(3),
+.datos:nth-child(4),
+.datos:nth-child(5),
+.datos:nth-child(6),
+.datos:nth-child(7) {
+  background-color: #e6e6e6;
+  grid-column-start: 5;
+  grid-column-end: 13;
 }

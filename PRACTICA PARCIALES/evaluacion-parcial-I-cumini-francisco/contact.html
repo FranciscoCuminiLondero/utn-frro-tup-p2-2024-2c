@@ -2,14 +2,30 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/contact.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <title>Contacto</title>
 </head>
 
 <body>
-
+    <div class="contenido">
+        <form class="formulario" action="" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrese el nombre..." />
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="Ingrese e-mail..." required />
+            <label for="subject">Subject:</label>
+            <input type="text" name="subject" id="subject" placeholder="Ingrese subject..." required />
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
+            <input class="my-button" type="submit" value="Enviar" />
+            <button class="my-button return" onclick="window.location.href='index.html'">
+                Volver
+            </button>
+        </form>
+    </div>
 </body>
 
 </html>

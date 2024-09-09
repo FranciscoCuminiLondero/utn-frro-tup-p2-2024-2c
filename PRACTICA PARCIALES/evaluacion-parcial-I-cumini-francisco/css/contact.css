@@ -1,5 +1,48 @@
 * {
-  font-family: Verdana, sans-serif;
+  font-family: Verdana;
   color: rgb(71, 71, 71);
-  font-size: 16px;
+  font-size: small;
+}
+
+.my-button {
+  padding: 10px 20px;
+  background-color: #3c425f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.my-button:hover {
+  background-color: rgba(60, 66, 95, 0.774);
+}
+
+.formulario {
+  margin: 0 auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f3f3;
+  padding: 2em;
+  border-radius: 1em;
+}
+
+.formulario label {
+  margin-bottom: 0.5em;
+}
+
+.formulario input,
+.formulario textarea {
+  padding: 1em 1.25em;
+  margin-bottom: 1em;
+  border-radius: 0.25em;
+  border: 1px solid #d1d0d0;
+}
+
+.return {
+  background-color: #646e9e;
+}
+
+.return:hover {
+  background-color: #646e9ece;
 }
